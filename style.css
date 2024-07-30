@@ -1,0 +1,111 @@
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+#container {
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.illustrator {
+    display: flex;
+    position: relative;
+    background-image: url(./image-equilibrium.jpg);
+    background-size: cover;
+    height: 300px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.illustrator:hover:before {
+    content: "";
+    background: hsl(178, 100%, 50%);
+    width: 100%;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+.view {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.view:hover {
+    background-image: url(./icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.eth img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#container h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.p,
+.time,
+.name {
+    color: hsl(215, 51%, 70%);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth,
+span {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.creator,
+.name,
+.avatar,
+.name2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.name2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.eth-icon img,
+p,
+.time img,
+p {
+    padding: 3px;
+}
+
+.name2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#container h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
